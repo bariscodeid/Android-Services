@@ -141,3 +141,42 @@ Done
 Alert dialog bisa kita custom dan mengeksekusinya yaitu kita perlu menambahkan builder kedalam sistem untuk menampilkan alert dialog terlebut, berikut adalah schema dari alert dialog
 
 <img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/alert-dialog.png">
+
+<b>Pertama</b> `Deklarasikan & Inisialisasi Class AlertDialog.Builder` terlebih dahulu didalam `OnCreate` Method
+
+```.java
+final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+```
+
+jika sudah selanjutnya buat alert dialognya
+
+```.java
+btFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            builder
+               .setMessage(getString(R.string.url_facebook))
+               .setTitle("Informasi")
+               .setPositiveButton("POSITIVE", new DialogInterface.OnClickListener() {
+                   @Override
+                   public void onClick(DialogInterface dialogInterface, int i) {
+                       Toast.makeText(ToastActivity.this, "This POSITIVE button!", Toast.LENGTH_SHORT).show();
+                   }
+                })
+                
+                .setNegativeButton("NEGATIVE", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(ToastActivity.this, "This NEGATIVE button!", Toast.LENGTH_SHORT).show();
+                    }
+                 });
+                 AlertDialog dialog = builder.create();
+                 dialog.show();
+            }
+});
+```
+
+Jika sudah berikut adalah hasil dari execute program alert dialog
+
+<img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535620585302.jpg" width='320'>&nbsp;
+<img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535620600997.jpg" width='320'>
