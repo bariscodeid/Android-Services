@@ -21,4 +21,4 @@ btFacebook.setOnClickListener(new View.OnClickListener() {
 
 dan berikut adalah tampilannya
 
-<img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535618407604.jpg" heigt=300>
+<img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535618407604.jpg" style="width:500px;height:600px;">
