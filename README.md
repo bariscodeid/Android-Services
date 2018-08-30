@@ -181,7 +181,7 @@ Jika sudah berikut adalah hasil dari execute program alert dialog
 <img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535620585302.jpg" width='320'>&nbsp;
 <img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535620600997.jpg" width='320'>
 
-Untuk menambahkan Icon dalam Alert dialog berikut kita tambahkan pada setIcon seperti dibawah ini
+Untuk menambahkan `Icon` dalam `Alert dialog` berikut kita tambahkan pada setIcon seperti dibawah ini
 
 ```.java
 builder
@@ -203,3 +203,9 @@ builder
       AlertDialog dialog = builder.create();
       dialog.show();
 ```
+
+dan berikut adalah hasil eksekusinya
+
+<img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535621039100.jpg" width='320'>
+
+Done.
