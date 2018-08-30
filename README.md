@@ -117,7 +117,8 @@ public class ToastActivity extends AppCompatActivity {
                         .setAction("SHOW", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Snackbar popupDele = Snackbar.make(coordinatorLayout, "Message is deleted!", 
+                                Snackbar popupDele = Snackbar
+                                .make(coordinatorLayout, "Message is deleted!", 
                                 Snackbar.LENGTH_SHORT);
                                 popupDele.show();
                             }
