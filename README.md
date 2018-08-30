@@ -136,3 +136,8 @@ Dan berikut adalah hasil dari popup Snackbar diatas
 <img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535620001030.jpg" width='320'>
 
 Done
+
+### Bagian 3: AlertDialog
+Alert dialog bisa kita custom dan mengeksekusinya yaitu kita perlu menambahkan builder kedalam sistem untuk menampilkan alert dialog terlebut, berikut adalah schema dari alert dialog
+
+<img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/alert-dialog.png">
