@@ -13,7 +13,8 @@ kemudian mengeksekusi toast dengan event tertentu misalkan klik
 btFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ToastActivity.this, "" + getString(R.string.url_facebook), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ToastActivity.this, "" + getString(R.string.url_facebook), 
+                Toast.LENGTH_SHORT).show();
             }
 });
 ```
