@@ -2,13 +2,13 @@
 Kumpulan service android, seperti Toast, AlertDialog, SnackBar &amp; banyak lagi
 
 ### Bagian 1: Toast
-Untuk menambahkan service ini kita hanya perlu mengimportkan library kedalam class
+Untuk menambahkan service ini kita hanya perlu `mengimportkan library` kedalam class
 
 ```.java
 import android.widget.Toast;
 ```
 
-kemudian mengeksekusi toast dengan event tertentu misalkan klik
+kemudian mengeksekusi `toast` dengan `event` tertentu misalkan klik
 ```.java
 btFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,18 +23,20 @@ dan berikut adalah tampilannya
 
 <img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535618407604.jpg" width='320'>
 
+Done.
+
 ### Bagian 2: Snackbar
-Untuk menambahkan snackbar pada aplikasi kita, kita perlu menambahkan beberapa sourcecode dan config dasarnya yaitu 
-- Layout Root View harus CoordiantorLayout & Memiliki ID
-- Menambahkan Dependency Libarary Design pada build.gradle (Module: app)
+Untuk menambahkan `snackbar` pada aplikasi kita, kita perlu menambahkan beberapa sourcecode dan config dasarnya yaitu 
+- Layout RootView harus `CoordiantorLayout` & `Memiliki ID`
+- Menambahkan `Dependency Libarary Design` pada `build.gradle (Module: app)`
 <br>
 
-Pertama kita tambahkan library dependency terlebih dahulu kedalam build.gradle (Module: app)
+<b>Pertama</b> kita tambahkan `library dependency` terlebih dahulu kedalam `build.gradle (Module: app)`
 ```.build.gradle
 implementation 'com.android.support:design:26.1.0'
 ```
 
-Kedua kita tambahkan terlebih dahulu layout dasarnya seperti dibawah ini dengan sebuah tombol untuk melakukan aksinya
+<b>Kedua</b> kita tambahkan terlebih dahulu layout dasarnya seperti dibawah ini dengan sebuah tombol untuk melakukan aksinya
 
 ```.xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -66,7 +68,7 @@ Kedua kita tambahkan terlebih dahulu layout dasarnya seperti dibawah ini dengan 
 </android.support.design.widget.CoordinatorLayout>
 ```
 
-Ketiga Deklarasikan View
+<b>Ketiga</b> Deklarasikan View
 
 ```.java
 package dev.id.bariscode.project2mengenallayoutwidget;
@@ -107,9 +109,11 @@ public class ToastActivity extends AppCompatActivity {
         btFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ToastActivity.this, "" + getString(R.string.url_facebook), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ToastActivity.this, "" + getString(R.string.url_facebook), 
+                Toast.LENGTH_SHORT).show();
                 Snackbar popUp = Snackbar
-                        .make(coordinatorLayout, "" + getString(R.string.url_facebook) + "", Snackbar.LENGTH_LONG)
+                        .make(coordinatorLayout, "" + getString(R.string.url_facebook) + "", 
+                        Snackbar.LENGTH_LONG)
                         .setAction("SHOW", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
