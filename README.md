@@ -180,3 +180,26 @@ Jika sudah berikut adalah hasil dari execute program alert dialog
 
 <img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535620585302.jpg" width='320'>&nbsp;
 <img src="https://github.com/bariscodeid/Android-Services/blob/master/screencapture/screenshot-1535620600997.jpg" width='320'>
+
+Untuk menambahkan Icon dalam Alert dialog berikut kita tambahkan pada setIcon seperti dibawah ini
+
+```.java
+builder
+    .setMessage(getString(R.string.url_facebook))
+    .setTitle("Informasi")
+    .setIcon(R.mipmap.ic_launcher)
+    .setPositiveButton("POSITIVE", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialogInterface, int i) {
+            Toast.makeText(ToastActivity.this, "This POSITIVE button!", Toast.LENGTH_SHORT).show();
+        }
+     })
+     .setNegativeButton("NEGATIVE", new DialogInterface.OnClickListener() {
+         @Override
+         public void onClick(DialogInterface dialogInterface, int i) {
+            Toast.makeText(ToastActivity.this, "This NEGATIVE button!", Toast.LENGTH_SHORT).show();
+         }
+      });
+      AlertDialog dialog = builder.create();
+      dialog.show();
+```
