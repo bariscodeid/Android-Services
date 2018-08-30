@@ -1,7 +1,7 @@
 # Android-Services
 Kumpulan service android, seperti Toast, AlertDialog, SnackBar &amp; banyak lagi
 
-### Service Toast Sederhana
+### Bag. 1: Toast
 Untuk menambahkan service ini kita hanya perlu mengimportkan library kedalam class
 
 ```.java
