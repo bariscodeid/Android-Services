@@ -160,14 +160,16 @@ btFacebook.setOnClickListener(new View.OnClickListener() {
                .setPositiveButton("POSITIVE", new DialogInterface.OnClickListener() {
                    @Override
                    public void onClick(DialogInterface dialogInterface, int i) {
-                       Toast.makeText(ToastActivity.this, "This POSITIVE button!", Toast.LENGTH_SHORT).show();
+                       Toast.makeText(ToastActivity.this, "This POSITIVE button!", 
+                       Toast.LENGTH_SHORT).show();
                    }
                 })
                 
                 .setNegativeButton("NEGATIVE", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(ToastActivity.this, "This NEGATIVE button!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ToastActivity.this, "This NEGATIVE button!", 
+                        Toast.LENGTH_SHORT).show();
                     }
                  });
                  AlertDialog dialog = builder.create();
